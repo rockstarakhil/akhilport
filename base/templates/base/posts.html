@@ -17,9 +17,9 @@
 <div class="main-container">
 	<h1>Posts</h1>
 	{% if request.user.is_staff %}
-		<a class="btn btn-warning" href="{% url 'create_post' %}">Create Post</a>
+		<!--<a class="btn btn-warning" href="{% url 'create_post' %}">Create Post</a> -->
 	{% endif %}
-	<form id="searchForm" method="GET">
+	<!--<form id="searchForm" method="GET">-->
 		{{myFilter.form|crispy}}
 		
 		<input class="btn btn-primary" type="submit" value="search">
@@ -41,10 +41,10 @@
 						| <a href="{% url 'delete_post' post.slug %}">Delete</a>
 					{% endif %}
 					<hr>
-					{% for tag in post.tags.all %}
+					<!--{% for tag in post.tags.all %}
 						<span class="tag">{{tag}}</span>
-					{% endfor %}
-				</div>
+					{% endfor %} -->
+				</div> 
 			</div>
 		</div>
 		{% empty %}
