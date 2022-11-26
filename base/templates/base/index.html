@@ -29,21 +29,18 @@
 			<div class="greeting-wrapper">
 				<h1>Hi, I'm Akhil Kishore</h1>
 			</div>
-
-
 			<div class="intro-wrapper">
 				{% include 'base/navbar.html' %}
 
 				<div class="left-column">
 					<img id="profile_pic" src="{% static 'images/akk.jpg' %}">
-					<h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
-
-					<div id="theme-options-wrapper">
+					<h5 style="text-align: center;line-height: 0;"> </h5>
+					<!--<div id="theme-options-wrapper">
 						<div data-mode="light" id="light-mode" class="theme-dot"></div>
 						<div data-mode="blue" id="blue-mode" class="theme-dot"></div>
 						<div data-mode="green" id="green-mode" class="theme-dot"></div>
 						<div data-mode="purple" id="purple-mode" class="theme-dot"></div>
-					</div>
+					</div> -->
 
 					
 				</div>
@@ -55,7 +52,10 @@
 							<div id="corner-tl" class="corner"></div>
 							<div id="corner-tr" class="corner"></div>
 							<h3>What I Do</h3>
-							<p>I worked as a software tester for 3 years , currently working as a Data Analyst .</p>
+							<p>I'm a Data Analyst , have 2 years of experence in working in manufacturing industries, 
+								providing them business insights. I have developed this website using Django and HTMl,css
+							</p>
+							<p>Deployed on Heroku</p>
 							<div id="corner-br" class="corner"></div>
 							<div id="corner-bl" class="corner"></div>
 						</div>
@@ -76,8 +76,6 @@
 						technical team to reduce the errors</p>
 
 					<p>Collected technical requirements for client accounts, defining data rules for and KPIs for performance metrics</p>
-
-
 					<hr>
 
 					<h4>TOP EXPERTISE</h4>
@@ -94,8 +92,7 @@
 						</ul>
 
 						<ul>
-							<li>Statistics Analysis </li>
-							<li>Quantitative Analysis</li>
+							
 							<li>Azure</li>
 							<li>Heroku</li>
 							<li>HTML/CSS</li>
@@ -137,7 +134,6 @@
 				</div>
 				{% endfor %}
 			</div>
-
 			<p align="center">
 				<a href="{% url 'posts' %}">View More</a>
 			</p>
