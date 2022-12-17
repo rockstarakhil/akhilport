@@ -1,1 +1,1 @@
-web: gunicorn dennisivy.wsgi --log-file -
+heroku ps:scale web=1
